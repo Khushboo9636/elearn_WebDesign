@@ -1,0 +1,150 @@
+
+.scrolled5{
+    background-color:rgb(244, 248, 7);
+  }
+.header1{
+    background-color:#fffb00;
+    padding-bottom: 45px;
+}
+.trans{
+    background-color: black;
+    color: aliceblue;
+    height: 560px;
+}
+.effect{
+    padding-top: 25px;
+    padding-left: 60px;
+    padding-bottom: 25px;
+    padding-right: 60px;
+    
+}
+
+.btn1{
+    position: absolute;
+    margin: 0;
+    left:0;
+    width: fit-content;
+    padding-top: 8px;
+    padding-right: 104px;
+    
+    left:0rem;
+    transform-origin: bottom left;
+    transform: rotate(-270deg);
+
+}
+.section4{
+    position: relative;
+}
+.wrap{
+    text-align: left;
+    padding-left:94px;
+     
+}
+.wrap h2{
+    text-align:left;
+    width: 50%;
+
+    font-size:2.8rem;
+    font-famiy:'barlow',sans-serif;
+     letter-spacing:-1px;
+
+}
+.container-fluid.tran{
+    padding-top: 12px;
+    padding-bottom: 120px;
+}
+.w11 h4{
+    position: absolute;
+    margin: 0;
+    left:0;
+    width: fit-content;
+    padding-top: 80px;
+    
+    left:3rem;
+    
+    transform-origin: bottom left;
+    transform: rotate(-270deg);
+}
+.img2{
+    position:absolute;
+    top:-6rem;
+   
+}
+
+@media (max-width:1200px){
+    .img2{
+        right:3rem;
+    }
+    .section6.title-col{
+        padding: 6rem 4rem;
+    }
+}
+.section-vid{
+    padding-top: 60px;
+    padding-bottom: 75px;
+    position: relative;
+
+}
+.section-vid .container{
+  
+    text-align: center;
+}
+.vid{
+    display: -webkit-flex;
+    -webkit-flex-wrapp:wrap;
+    margin-right: 30px;
+    margin-left:30px;
+}
+.section-vid .box{
+    background-image: url(../image/vid.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 550px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.back2{
+    background-color: yellow;
+    position: absolute;
+    bottom: 0;
+    right:0;
+    width:100%;
+    height:40%;
+    
+}
+.section-vid .mbr-media span{
+    font-size: 30px;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    transition: all 0.25s;
+    color: #1c1c1c 
+}
+.btn12{
+    width: 100%;
+    height: 100%;
+    text-align: left;
+}
+.section-vid .icon-wrap{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    transition: all 0.3s;
+}
+.section-vid .icon-wrap:hover{
+    transform: scale(1.1);
+}
+
+.section7 img {
+    width: 100%;
+    transition: 5s;
+    object-fit: cover;
+}
+a, a:hover{
+    text-decoration: none;
+}

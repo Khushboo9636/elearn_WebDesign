@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html> 
+<head>
+ 
+
+    <style>
+        #container{
+            width: 400px;
+            height: 400px;
+            position: relative;
+            background-color: yellow;
+        }
+        #animate{
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            background-color: red;
+        }
+    </style>
+<script>
+  document.write( 5 + 6 );
+  window.alert(10+5);
+  alert(12+5);
+  
+</script>
+</head>
+<body>
+   <p id="demo"></p>
+   <script>
+    let x, y, z;
+    x=5;
+    y=6;
+    z = x + y;
+    document.getElementById("demo").innerHTML = "The value of z is" + z +".";
+    
+   </script>
+    <button type="button" onclick="document.write(5 + 8)">result</button>
+    <button type="button" onclick="window.print()">print</button>
+    <button type="button" onclick="myfunction()">click me </button>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <script>
+        function myfunction(){
+            document.getElementById("demo1").innerHTML ="hello khushi!!!";
+            document.getElementById("demo2").innerHTML="how r uu!!!!";
+        }
+
+    </script>
+    <p id="demo3">variable</p>
+    <script> carName="volvo";
+        document.getElementById("demo").innerHTML = carNAme;
+        var carName;
+
+    </script>
+    <p id="demo4">varstring</p>
+    <script>
+        let x = 16 + "volvo"; 
+        document.getElementById("demo4").innerHTML = x;
+        document.getElementById("demo4").style.color="red";
+
+    </script>
+   
+    <p id="demo5">function</p>
+
+    <script>
+        function myfn( p1 , p2){
+            return p1*p2;
+        }
+        document.getElementById("demo5").innerHTML = myfn(4,3);
+        document.getElementById("demo5").style.color="blue";
+    </script>
+    <P id="demo6"></P>
+    <script>
+        function tocelsicus(f){
+            return(5/9) * (f-32); 
+        }
+        document.getElementById("demo6").innerHTML = tocelsicus(85)
+    </script>
+    <img id="image" src ="smiley.gief" width="160" height="120">
+    <script>
+        document.getElementById("image").src = "landscape.jpg";
+    </script>
+    <p id="demo7"></p>
+    <script>
+        document.getElementById("demo7").innerHTML = "Date: " + Date(); 
+    </script>
+    <script>
+        document.write(Date());
+    </script>
+    
+    <h2>form validation</h2>
+    <form name="myform" action="/action_page.php" onsubmit="return validateForm()"  method="post">
+        name: <input type ="text" name="fname">
+        <input type="submit"value="submit">
+
+
+    </form>
+    <script>
+         
+        function validateForm(){
+            let x = document.forms["myForm"]["fname"].value;
+            if(x==""){
+                alert("name must be filled out");
+                return false;
+            }
+        }
+
+    </script>
+          
+        <input id="numb">
+        <button type="button" onclick="myfunction1()">submit</button> 
+        <p id="demo8"></p>
+        <script>
+            function myfunction1(){
+                let x= document.getElementById("numb").value;
+                let text;
+                if (isNaN(x) || x < 1 || x > 10){
+                    text ="input not valid";
+
+                }else{
+                    text= "Input Ok"
+                }
+                document.getElementById("demo9").innerHTML = text;
+            }
+             
+            
+
+        </script> 
+        <h1 id="id1" > my heading</h1>
+        <button type="button" onclick="document.getElementById('id1').style.color='red'">
+        change</button>
+
+
+        <p><button onclick="mymove()" >click me!!</button></p>
+        <div id="container">
+            <div id="animate"></div>
+        </div>
+        <script>
+            function mymove(){
+                let id=null;
+                const elem = document.getElementById("animate");
+                let pos=0;
+                clearInterval(id);
+                id= setInterval(frame,5);
+                function frame(){
+                    if(pos ==350){
+                        clearInterval(id);
+
+                    }else{
+                        pos++;
+                        elem.style.top = pos +"px";
+                        elem.style.left= pos+ "px";
+                    }
+                }
+            }
+        </script>
+               
+        <h2 onclick="this.innerHTML='Ooops!'">javascript html click on this text</h2>
+        <input type="text" id="fname" onchange="upperCase()">
+        <script>
+            function upperCase(){
+                const x= document.getElementById("fname");
+                x.value= x. value.toUpperCase();
+            }
+        </script>
+
+               <div onmouseover="mover(this)" onmouseout="mout(this)"
+               style="background-color:#D94A38;width:120px;height:20px;padding:40px;">
+               mouse over me
+            </div>
+            <script>
+                function mover(obj){
+                    obj.innerHTML = " thank you"
+                }
+                function mout(obj){
+                    obj.innerHTML = "mouse over me"
+                }
+            </script>
+            <h1  onmouseover="style.color='red'" onmouseout="style.color='blue'">mouse over this text</h1>
+
+            <script>
+                function lighton() {
+                  document.getElementById('myimage').src = "bulbon.gif";
+                }
+                function lightoff() {
+                  document.getElementById('myimage').src = "bulboff.gif";
+                }
+                </script>
+              
+                <img id="myimage" onmousedown="lighton()" onmouseup="lightoff()" src="bulboff.gif" width="100" height="180" />
+                
+                <script> lighton(){
+                document.getElementById('iiid').src= "bulbon.gif";    
+                }
+                function lightoff(){
+                    document.getElementById('iiid').src = "bulboff.gif";
+
+                }
+            </script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script>
+            <script>
+                $(document).ready(function(){
+                    $("button").click(function(){
+                        $("#div1").fadeOut();
+                        $("#div2").fadeOut("slow");
+                        $("#div3").fadeOut(3000);
+                    });
+                });
+            </script>
+            <button>Click to fade out boxes</button><br><br>
+            <div id="div1" style="width:80px;height:80px;background-color:red;"></div><br>
+<div id="div2" style="width:80px;height:80px;background-color:green;"></div><br>
+<div id="div3" style="width:80px;height:80px;background-color:blue;"></div>
+
+
+
+
+
+   
+</body>
+</html>

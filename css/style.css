@@ -1,0 +1,14 @@
+.symbol{
+    float: right;
+}
+.header.h11{
+    height: 650px;
+}
+.bgk{
+    background-color: rgb(208, 218, 214);
+    padding-left: 75px;
+    padding-top: 100px;
+    padding-right: 100px;
+    padding-bottom: 40px;
+  
+  }
